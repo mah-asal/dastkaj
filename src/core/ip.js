@@ -13,6 +13,7 @@ module.exports = async (ip = '') => {
 
         return result.data['data']['country']['iso_code'];
     } catch (error) {
+        console.error(error);
         return null;
     }
 }
